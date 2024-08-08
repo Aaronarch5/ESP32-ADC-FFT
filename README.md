@@ -21,8 +21,24 @@ This project demonstrates how to use the `arduinoFFT` library on an ESP32 to per
 ## Wiring
 
 Connect your analog signal source to pin 34 of the ESP32.
+##How to Use
+-Connect your ESP32 to the computer and upload the provided code.
+-Open the Serial Monitor in Arduino IDE (set the baud rate to 115200).
+-The frequency components will be printed to the Serial Monitor.
 
-## Code
+##Explanation
+Setup:
+
+--Initializes Serial communication at a baud rate of 115200.
+--Calculates the sampling period in microseconds based on the defined sampling frequency.
+##Loop:
+
+--Reads analog values from pin 34 and stores them in vReal.
+--Applies a Hamming window to the sampled data.
+--Performs the FFT on the windowed data.
+--Converts the complex numbers to magnitudes.
+--Prints the magnitude values to the Serial Monitor.
+Notes
 
 The following code reads analog values, computes the FFT, and prints the frequency components to the Serial Monitor.
 
