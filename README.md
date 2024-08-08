@@ -39,7 +39,6 @@ Setup:
 - Performs the FFT on the windowed data.
 - Converts the complex numbers to magnitudes.
 - Prints the magnitude values to the Serial Monitor.
-Notes
 
 The following code reads analog values, computes the FFT, and prints the frequency components to the Serial Monitor.
 
